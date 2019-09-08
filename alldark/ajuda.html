@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>GP - Ajuda</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<center>
+<div id="help">
+<h1>Gerador de Provas - Ajuda</h1>
+<hr>
+<h2>Sobre</h2>
+<p>O Gerador de Provas é uma aplicação web feita como projeto para PIBIC-EM/Computação (Uni-FACEF) por Arthur Carrenho. As seguintes libs foram utilizadas:</p>
+<ul>
+	<li>xmlToJson - por metatribal</li>
+	<li>jQuery - por John Resig</li>
+	<li>Imgur-Upload - por carry0987</li>
+</ul>
+<hr>
+<h2>Tela Inicial</h2>
+<p>Na tela inicial, as seguintes entradas são apresentadas:</p>
+<ul>
+	<li>Quantidade de questões</li>
+	<li>Quantidade de alternativas</li>
+	<li>Variedade de provas</li>
+	<li>Questões extras</li>
+</ul>
+<p>Além de atalhos para utilização do banco de questões</p>
+<h3>Quantidade de questões</h3>
+<p>Neste campo, você insere a quantidade de questões desejada para a prova, note que este campo apenas limita a quantidade de questões totais da prova, a quantidade de questões que serão "cadastradas" são a soma da <b>Quantidade de questões</b> com <b>Questões extras</b>.</p>
+<h3>Quantidade de alternativas</h3>
+<p>Neste campo, você insere a quantidade de alternativas (como A, B, C, D, E) desejadas para prova.</p>
+<h3>Variedade de provas</h3>
+<p>Neste campo, você insere a quantidade de provas diferentes que serão geradas, note que as questões são totalmente sorteadas, mesmo com apenas uma variação de prova.</p>
+<h3>Questões extras</h3>
+<p>Neste campo, você insere a quantidade de questões extras a serem "cadastradas", note que estas questões não interferem na quantidade de questões resultantes pelo gerador, apenas insere as questões no sorteio das variações.</p>
+<hr>
+<h2>Midia e Cabeçalho</h2>
+<p>Durante o cadastro de questões e alternativas, é possivel inserir um cabeçalho para prova (em formato de imagem) e midia para acompanhar as questões.</p>
+<p>Insira no campo um link direto para imagem. O Gerador de Provas acompanha um atalho para envio de imagens com link direto (Enviar imagens).</p>
+<hr>
+<h2>Enviar imagens</h2>
+<p>Utilize essa pagina para enviar imagens e gerar links diretos para serem utilizados nos campos midia e cabeçalho. Arraste a imagem para a zona pontilhada ou clique nela para procurar arquivo para enviar as fotos, após isto, o link sera apresentado.</p>
+<hr>
+<h2>Banco de questões</h2>
+<p>Na área importar do campo de Banco de questões você pode utilizar o arquivo gerado pela área exportar. Você também pode utilizar arquivos xml gerados pelo Excel, utilizando <a href="https://www.dropbox.com/s/juchd7eprscuou9/Modelo%20Excel.xlsx?dl=1">este modelo.</a></p>
+<h3>Trabalhando com Excel</h3>
+<p>Você pode nativamente abrir os arquivos XML gerados pela exportação do banco de questões, note que ao salvar, talvez o programa não retorne como padrão a extenção de origem (XML).</p>
+<p>Para salvar corretamente o arquivo, seja pela importação de XML ou utilizando o modelo de geração, salve como <b>Dados XML (*.xml)</b>. Tome cuidado para não confundir com Planilhas XML ou Planilhas Excel (.xlsx) (Opção padrão da janela de salvamento).</p>
+<h3>Modo de importação</h3>
+<p>Ao importar o arquivo, você pode escolher entre o modo linear e o modo aleatório.</p>
+<p>Modo Linear: As questões serão importadas na ordem do banco de questões</p>
+<p>Modo Aleatorio: As questões serão sorteadas dentro do banco de questões</p>
+<p>Note que não é possivel selecionar um numero de questões maior que o numero de questões do banco de questões.</p>

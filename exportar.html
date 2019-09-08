@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Banco de questões</title>
+	<meta charset="UTF-8">
+</head>
+<body onload="resetad();">
+<center>
+<div id="main1">
+<h1>Banco de questões - Gerador</h1>
+	<label>Quantidade de questões</label><br>
+	<input type="number" name="q1" min="1" id="q1" value="1" required="true"><br>
+	<label>Quantidade de alternativas</label><br>
+	<input type="number" name="q2" min="2" id="q2" value="2" required="true"><br><br>
+	<button class="button" onclick="start();">Continuar</button><br><br>&nbsp
+	<button class="button" onclick="window.open('upload.html', '_blank');">Enviar imagens</button><br>&nbsp
+</div>
+<div id="warning">
+<h1>Aviso</h1>
+	<p>Você está com bloqueador de anuncios (adblock) ativo.</p>
+	<p>Esta aplicação não utiliza anuncios, porém os bloqueadores podem impedir seu correto funcionamento.</p>
+	<p>Por favor desative o adblock, se você não sabe como fazer isso clique <a href="https://veja.abril.com.br/como-desativar-adblock/">aqui</a>.</p>
+	<p>Se você estiver utilizando a aplicação por arquivo local, coloque <strong>"@@file:///$document"</strong> na lista de filtros</p>
+</div>
+</center>
+</body>
+<!-- Arthur Carrenho - 2019 -->
+<script type="text/javascript" src="js/exportar.js"></script>
+</html>

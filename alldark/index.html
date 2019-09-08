@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Gerador de provas</title>
+	<meta charset="UTF-8">
+</head>
+<body onload="resetad();">
+<center>
+<div id="main1">
+<h1>Gerador de provas - Inicio</h1>
+	<label>Quantidade de questões</label><br>
+	<input type="number" name="q1" min="1" id="q1" value="1" required="true"><br>
+	<label>Quantidade de alternativas</label><br>
+	<input type="number" name="q2" min="2" id="q2" value="2" required="true"><br>
+	<label>Variedade de provas</label><br>
+	<input type="number" name="q3" min="1" id="q3" value="1" required="true"><br>
+	<label>Questões extras</label><br>
+	<input type="number" name="q4" min="0" id="q4" value="0" required="true"><br><br>
+	<button class="button" onclick="start();">Continuar</button><br><br>&nbsp
+	<button class="button" onclick="window.open('upload.html', '_blank');">Enviar imagens</button><br>&nbsp
+</div>
+<div id="helpd">
+	<br>
+	<button class="button" onclick="window.open('ajuda.html', '_blank');">Ajuda</button> <button class="button" onclick="window.open('sobre.html', '_blank');">Sobre</button><br>&nbsp<br>
+	<button class="button" onclick="window.open('../index.html', '_self');">White Mode</button> <button class="button" onclick="window.open('../semidark/index.html', '_self');">Dark Mode 2</button><br>&nbsp	
+</div>
+<div id="bc">
+	<h3>Banco de Questões</h3>
+	<button class="button" onclick="window.open('importar.html', '_self');">Importar</button> <button class="button" onclick="window.open('exportar.html', '_self');">Exportar</button><br>&nbsp
+</div>
+<div id="warning">
+<h1>Aviso</h1>
+	<p>Você está com bloqueador de anuncios (adblock) ativo.</p>
+	<p>Esta aplicação não utiliza anuncios, porém os bloqueadores podem impedir seu correto funcionamento.</p>
+	<p>Por favor desative o adblock, se você não sabe como fazer isso clique <a href="https://veja.abril.com.br/como-desativar-adblock/">aqui</a>.</p>
+	<p>Se você estiver utilizando a aplicação por arquivo local, coloque <strong>"@@file:///$document"</strong> na lista de filtros</p>
+</div>
+</center>
+</body>
+<!-- Arthur Carrenho - 2019 -->
+<script type="text/javascript" src="../js/script.js"></script>
+</html>
