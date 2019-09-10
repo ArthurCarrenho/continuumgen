@@ -41,6 +41,7 @@ var global_q;
 var global_a;
 var global_v = 1;
 var global_passer;
+var nextg
 function start() {
 	var q1 = document.getElementById('q1');
 	var q2 = document.querySelector("#q2");
@@ -90,7 +91,7 @@ function next1(variacoes = 1) {
  	 }
  	 for (i = 0; i < global_q; i++) {
  	 	var l = i + 1;
- 	 	var nextg = `input[name="correta${l}"]:checked`;
+ 	 	nextg = `input[name="correta${l}"]:checked`;
  	 	gabarito.push(htmlEntities(document.querySelector(nextg).value));
  	 }
  	 var allquestsize = global_q;
@@ -131,6 +132,7 @@ function next1(variacoes = 1) {
  	 	final +=  aaa;
  	 	final += `</${k}>`
  	 	}
+ 	 	nextg = `input[name="correta${l}"]:checked`;
  	 	final += `<gabarito>${htmlEntities(document.querySelector(nextg).value)}</gabarito>`
 		final +=  '</questao>'
  	 } 	
